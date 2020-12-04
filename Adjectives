@@ -1,0 +1,8 @@
+# We create a list with all the adjectives in WordNet
+
+sy = []
+
+for synset in list(wn.all_synsets('a'))[:]:
+    sy.append(synset)
+    
+print(len(sy))
